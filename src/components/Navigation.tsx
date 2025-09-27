@@ -3,12 +3,15 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Schedule", path: "/schedule" },
+  { name: "Events", path: "/events" },
   { name: "Speakers", path: "/speakers" },
+  { name: "Jobs", path: "/jobs" },
   { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
 ];
@@ -57,6 +60,7 @@ export const Navigation = () => {
               </Link>
             ))}
             <Button className="btn-hero">Register Now</Button>
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
