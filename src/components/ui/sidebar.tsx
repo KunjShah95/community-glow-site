@@ -11,34 +11,19 @@ import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { useSidebar, SidebarContext } from "./sidebar-utils";
 
-const SIDEBAR_COOKIE_NAME = "sidebar:state";
-const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
-const SIDEBAR_WIDTH = "16rem";
-const SIDEBAR_WIDTH_MOBILE = "18rem";
-const SIDEBAR_WIDTH_ICON = "3rem";
+// Sidebar dimension constants
+const SIDEBAR_WIDTH = "260px";
+const SIDEBAR_WIDTH_ICON = "56px";
+const SIDEBAR_WIDTH_MOBILE = "80vw";
+
+// Sidebar cookie constants
+const SIDEBAR_COOKIE_NAME = "sidebar_open";
+const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days in seconds
+
+// Keyboard shortcut for toggling the sidebar (e.g., "b" for Cmd/Ctrl+B)
 const SIDEBAR_KEYBOARD_SHORTCUT = "b";
-
-type SidebarContext = {
-  state: "expanded" | "collapsed";
-  open: boolean;
-  setOpen: (open: boolean) => void;
-  openMobile: boolean;
-  setOpenMobile: (open: boolean) => void;
-  isMobile: boolean;
-  toggleSidebar: () => void;
-};
-
-const SidebarContext = React.createContext<SidebarContext | null>(null);
-
-function useSidebar() {
-  const context = React.useContext(SidebarContext);
-  if (!context) {
-    throw new Error("useSidebar must be used within a SidebarProvider.");
-  }
-
-  return context;
-}
 
 const SidebarProvider = React.forwardRef<
   HTMLDivElement,
@@ -90,9 +75,9 @@ const SidebarProvider = React.forwardRef<
 
   // We add a state so that we can do data-state="expanded" or "collapsed".
   // This makes it easier to style the sidebar with Tailwind classes.
-  const state = open ? "expanded" : "collapsed";
+  const state: "expanded" | "collapsed" = open ? "expanded" : "collapsed";
 
-  const contextValue = React.useMemo<SidebarContext>(
+  const contextValue = React.useMemo(
     () => ({
       state,
       open,
@@ -633,5 +618,4 @@ export {
   SidebarRail,
   SidebarSeparator,
   SidebarTrigger,
-  useSidebar,
 };

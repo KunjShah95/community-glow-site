@@ -67,52 +67,105 @@ You can edit this project in several ways:
 ## Custom Domain
 
 You can connect your own domain in Lovable:
+# Community Glow Site
 
-- Go to Project → Settings → Domains → Connect Domain
-- For details, see: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+A modern, responsive web application for community events, jobs, and networking, built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui components.
 
----
+## Features
 
-## Security Considerations
+- **Landing Page**: Hero, highlights, sponsors, and timeline sections.
+- **Events**: List and details of upcoming and past events.
+- **Speakers**: Showcase of event speakers.
+- **Jobs**: Job board with search and filter.
+- **Gallery**: Event photos and media.
+- **Contact**: Contact form and information.
+- **About**: Community mission and team.
+- **Theme Toggle**: Light/dark mode support.
+- **Responsive Design**: Mobile-first, accessible UI.
 
-### Current Status
+## Tech Stack
 
-This codebase is focused on providing a public-facing web application for event and community management. **There are no detailed security cases, authentication flows, or sensitive data handling implemented in the current version.** There is no SECURITY.md file or explicit security documentation.
+- **Frontend**: React, TypeScript, Vite
+- **Styling**: Tailwind CSS, PostCSS
+- **UI Components**: shadcn/ui
+- **State Management**: React Context, Hooks
+- **Build Tools**: Vite, ESLint
 
-### Recommendations
+## Getting Started
 
-If you plan to add features that involve user authentication, sensitive data, or administrative functions in the future, consider the following best practices:
-- Implement authentication and authorization if you collect user data or provide restricted features.
-- Sanitize and validate all user input.
-- Use HTTPS in production deployments.
-- Document any security policies or procedures in a SECURITY.md file.
-- Review dependencies for vulnerabilities regularly.
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm (v9+ recommended)
 
-If you need help adding security features or want to create a SECURITY.md, please open an issue or pull request!
+### Installation
 
----
+```bash
+npm install
+```
 
-## Code of Conduct
+### Development
 
-All contributors and participants are expected to uphold a respectful, welcoming, and inclusive environment. Harassment or discrimination of any kind will not be tolerated.
+```bash
+npm run dev
+```
 
-- **Be respectful:** Value each other's ideas, styles, and viewpoints.
-- **Be inclusive:** Encourage participation from people of all backgrounds and skill levels.
-- **Be considerate:** Remember that your contributions affect others, and we’re working together to build something great.
+- Open [http://localhost:5173](http://localhost:5173) to view the app.
 
-If you experience or witness unacceptable behavior, please report it by opening an issue or contacting a project maintainer.
+### Build for Production
 
-For more information, see the full [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) or review the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
+```bash
+npm run build
+```
 
----
+### Linting
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```
+community-glow-site/
+├── public/                # Static assets
+├── src/
+│   ├── assets/            # Images and media
+│   ├── components/        # Reusable UI components
+│   │   └── ui/            # shadcn/ui components
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions
+│   ├── pages/             # Page components (routing handled by Vite/SPA)
+│   └── App.tsx            # Main app entry
+├── index.html             # HTML template
+├── tailwind.config.ts     # Tailwind CSS config
+├── postcss.config.js      # PostCSS config
+├── vite.config.ts         # Vite config
+├── tsconfig.json          # TypeScript config
+├── package.json           # Project metadata and scripts
+└── README.md              # Project documentation
+```
+
+## Customization
+
+- **Add/Edit Pages**: Modify or add files in `src/pages/`.
+- **Add Components**: Place new components in `src/components/` or `src/components/ui/`.
+- **Styling**: Update Tailwind config or add custom CSS in `src/index.css` or `src/App.css`.
+
+## Contributing
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
 ## License
 
-This project is open source and available under the [MIT License](./LICENSE).
+MIT
 
 ---
 
-## Acknowledgements
+For questions or support, open an issue or contact the maintainers.
+```
 
-- Built with [Vite](https://vitejs.dev/), [React](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [shadcn-ui](https://ui.shadcn.com/).
-- Lovable deployment by [Lovable.dev](https://lovable.dev/).
+
