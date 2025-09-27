@@ -1,73 +1,118 @@
-# Welcome to your Lovable project
+# Community Glow Site
 
-## Project info
+A web application for event and community management, built for open source gatherings and conferences.
 
-**URL**: https://lovable.dev/projects/c39ec0fe-9375-44bc-9bcd-8c8bcd867eae
+---
 
-## How can I edit this code?
+## Project Info
 
-There are several ways of editing your application.
+**Live URL:** [https://lovable.dev/projects/c39ec0fe-9375-44bc-9bcd-8c8bcd867eae](https://lovable.dev/projects/c39ec0fe-9375-44bc-9bcd-8c8bcd867eae)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c39ec0fe-9375-44bc-9bcd-8c8bcd867eae) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Requirements
 
-**Use your preferred IDE**
+- Node.js & npm (recommended: use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone the repository:**
+   ```sh
+   git clone <YOUR_GIT_URL>
+   cd <YOUR_PROJECT_NAME>
+   ```
 
-Follow these steps:
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+   Visit the local address shown in your terminal to view the site.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Editing the Code
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+You can edit this project in several ways:
 
-**Edit a file directly in GitHub**
+- **Via Lovable:** [Open the Lovable Project](https://lovable.dev/projects/c39ec0fe-9375-44bc-9bcd-8c8bcd867eae) and prompt away. Changes via Lovable are committed automatically.
+- **In your IDE:** Clone the repo, make changes locally, then push. Changes will be reflected in Lovable.
+- **Directly on GitHub:** Edit any file in the GitHub UI and commit your changes.
+- **GitHub Codespaces:** Launch a codespace from the GitHub interface for a full online dev environment.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## Tech Stack
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Vite**
+- **TypeScript**
+- **React**
+- **shadcn-ui**
+- **Tailwind CSS**
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Open [Lovable](https://lovable.dev/projects/c39ec0fe-9375-44bc-9bcd-8c8bcd867eae), then click Share → Publish.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/c39ec0fe-9375-44bc-9bcd-8c8bcd867eae) and click on Share -> Publish.
+## Custom Domain
 
-## Can I connect a custom domain to my Lovable project?
+You can connect your own domain in Lovable:
 
-Yes, you can!
+- Go to Project → Settings → Domains → Connect Domain
+- For details, see: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Security Considerations
+
+### Current Status
+
+This codebase is focused on providing a public-facing web application for event and community management. **There are no detailed security cases, authentication flows, or sensitive data handling implemented in the current version.** There is no SECURITY.md file or explicit security documentation.
+
+### Recommendations
+
+If you plan to add features that involve user authentication, sensitive data, or administrative functions in the future, consider the following best practices:
+- Implement authentication and authorization if you collect user data or provide restricted features.
+- Sanitize and validate all user input.
+- Use HTTPS in production deployments.
+- Document any security policies or procedures in a SECURITY.md file.
+- Review dependencies for vulnerabilities regularly.
+
+If you need help adding security features or want to create a SECURITY.md, please open an issue or pull request!
+
+---
+
+## Code of Conduct
+
+All contributors and participants are expected to uphold a respectful, welcoming, and inclusive environment. Harassment or discrimination of any kind will not be tolerated.
+
+- **Be respectful:** Value each other's ideas, styles, and viewpoints.
+- **Be inclusive:** Encourage participation from people of all backgrounds and skill levels.
+- **Be considerate:** Remember that your contributions affect others, and we’re working together to build something great.
+
+If you experience or witness unacceptable behavior, please report it by opening an issue or contacting a project maintainer.
+
+For more information, see the full [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) or review the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](./LICENSE).
+
+---
+
+## Acknowledgements
+
+- Built with [Vite](https://vitejs.dev/), [React](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [shadcn-ui](https://ui.shadcn.com/).
+- Lovable deployment by [Lovable.dev](https://lovable.dev/).
