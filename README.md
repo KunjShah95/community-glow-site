@@ -167,5 +167,3 @@ MIT
 
 For questions or support, open an issue or contact the maintainers.
 ```
-
-
