@@ -242,7 +242,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-2">🎙️ Speaking</h4>
                     <p className="text-muted-foreground text-sm">
-                      Speaker applications for 2025 will open in September 2024.
+                      Speaker applications for 2025 are now open! Apply before August 2025.
                     </p>
                   </div>
                 </div>

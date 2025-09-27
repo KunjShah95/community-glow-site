@@ -6,7 +6,7 @@ import { Calendar, Clock, MapPin, User } from "lucide-react";
 const Schedule = () => {
   const days = [
     {
-      date: "March 15, 2024",
+      date: "October 5, 2025",
       day: "Day 1",
       theme: "Foundation & Community",
       sessions: [
@@ -41,7 +41,7 @@ const Schedule = () => {
       ]
     },
     {
-      date: "March 16, 2024",
+      date: "October 6, 2025",
       day: "Day 2",
       theme: "Innovation & Technology",
       sessions: [
@@ -76,7 +76,7 @@ const Schedule = () => {
       ]
     },
     {
-      date: "March 17, 2024",
+      date: "October 7, 2025",
       day: "Day 3",
       theme: "Future & Collaboration",
       sessions: [
@@ -159,7 +159,7 @@ const Schedule = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Three days of inspiring talks, hands-on workshops, and meaningful connections.
+            One day of inspiring talks, hands-on workshops, and meaningful connections at Silver Oak University.
           </motion.p>
         </div>
       </section>
@@ -243,8 +243,8 @@ const Schedule = () => {
               Don't Miss Out!
             </h3>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Register now to secure your spot at OpenTech Connect 2024 and be part of 
-              this incredible journey.
+              Register now to secure your spot at OpenTech Connect 2025 at Silver Oak University 
+              and be part of this incredible journey.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}

@@ -38,7 +38,7 @@ export const Hero = () => {
             OpenTech
             <br />
             <span className="bg-gradient-to-r from-primary-glow to-secondary bg-clip-text text-transparent">
-              Connect 2024
+              Connect 2025
             </span>
           </motion.h1>
           
@@ -78,11 +78,11 @@ export const Hero = () => {
           >
             <div className="flex items-center gap-3">
               <Calendar className="w-5 h-5 text-primary-glow" />
-              <span className="font-medium">March 15-17, 2024</span>
+              <span className="font-medium">October 5, 2025</span>
             </div>
             <div className="flex items-center gap-3">
               <MapPin className="w-5 h-5 text-primary-glow" />
-              <span className="font-medium">San Francisco, CA</span>
+              <span className="font-medium">Silver Oak University</span>
             </div>
             <div className="flex items-center gap-3">
               <Users className="w-5 h-5 text-primary-glow" />
